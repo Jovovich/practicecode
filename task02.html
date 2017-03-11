@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+<body>
+<!-- 输入框 -->
+    <label for="">请输入您的内容:</label>
+    <input type="text" id="content">
+<!-- 内容显示框 -->
+    <label for="show">您输入的值是:</label>
+    <input type="text" id="show" >
+<!-- 事件按钮 -->
+    <input type="button" value="确认填写" id="btn">
+
+    <script>
+        // 获取按钮、输入、显示框
+        var btn = document.getElementById("btn");
+        var txt2 = document.getElementById("show");
+        var txt1 = document.getElementById("content");
+        // 为按钮添加点击事件
+        btn.onclick=function(){   
+            txt2.value = txt1.value;//事件触发后将输入框值赋给显示框
+        }
+    </script>
+</body>
+</html>
